@@ -1,17 +1,154 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Funciones de Javascript, Trabajo practico 3, Javascript, Funciones, RollingCode, Modulo 2, comision 42i">
-    <meta name="description" content="Trabajo practico 3 Javascript">
-    <meta name="author" content="Esteban Molina">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="Funciones de Javascript, Trabajo practico 3, Javascript, Funciones, RollingCode, Modulo 2, comision 42i" />
+    <meta name="description" content="Trabajo practico 3 Javascript" />
+    <meta name="author" content="Esteban Molina" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
     <title>T.P nº3 JS</title>
 </head>
+<header></header>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="container text-center">
+        <h1 class="text-bg-warning">Javascript</h1>
+        <h2 class="text-warning">Trabajo practico nº3</h2>
+    </div>
+    <main>
+        <section class="container">
+            <div class="accordion my-5" id="ejerciciosTP">
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            Ejercicio nº 1
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="row accordion-body"> 
+                            <p>Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por pantalla en forma de lista los doce nombres del arreglo.</p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            Ejercicio nº 2
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="accordion-body">
+                            <p> Crear un script que solicite al usuario mediante un prompt el nombre de ciudades y almacenarlas en un arreglo, cuando el usuario selecciona cancelar se debe mostrar el arreglo generado, luego realizar las siguientes acciones:
+                                <ul>
+                                    <li>Mostrar la longitud del arreglo.</li>
+                                    <li>Mostrar en el documento web los ítems de las posiciones primera, tercera y última.</li>
+                                    <li>Añade en última posición la ciudad de París.</li>
+                                    <li>Escribe por pantalla el elemento que ocupa la segunda posición.</li> 
+                                    <li>Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.</li> 
+                                </ul>
+                                </p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            Ejercicio nº 3
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="accordion-body">
+                            <p>Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces esta operación.
+                            </p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Ejercicio nº 4
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="accordion-body">
+                            <p> Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
+                            </p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            Ejercicio nº 5
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="accordion-body">
+                            <p> Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
+                            </p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            Ejercicio nº 6
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="accordion-body">
+                            <p>Solicitar por pantalla al usuario ingresar el valor de los lados de un rectángulo, luego crear una función para calcular su perímetro y mostrarlo por pantalla.
+                            <li>La fórmula del perímetro  es p = 2*(a +b)</li> 
+                            </p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            Ejercicio nº 7
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                        data-bs-parent="#ejerciciosTP">
+                        <div class="accordion-body">
+                            <p>Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+                            </p>
+                            <a href="">Solución</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
