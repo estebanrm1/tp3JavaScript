@@ -7,4 +7,4 @@ function esParoImpar(numero){
 }
 
 let numero = prompt('Ingrese un numero');
-document.write(esParoImpar(numero))
+document.write(esParoImpar(numero));
